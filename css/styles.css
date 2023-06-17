@@ -18,7 +18,7 @@ body {
 }
 h1,h2,h3 {
     font-weight: 900;
-    line-height: 1.2rem;
+    line-height: 10.2rem;
     margin: 1rem 0 4rem 0;
 }
 
@@ -189,29 +189,30 @@ img {
 }
 .slogan p {
     margin: 0;
-    line-height: 1;
+    line-height: 5;
 }
 
  /** Sobre Nosotros **/
 
 .nosotros {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     background-image: url(../08-arquitectura/img/nosotros.jpg);
     background-repeat: no-repeat;
     background-position: bottom center;
- }
- @media (min-width: 768px ){ 
+}
+
+@media (min-width: 992px ){ 
     .nosotros {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
- .contenido-nosotros {
+.contenido-nosotros {
     background-color: var(--blanco);
     padding: 5rem;
- }
-@media (min-width: 768px ){ 
+}
+@media (min-width: 992px ){ 
     .contenido-nosotros {
         grid-column: 2 / 4;
     }
@@ -219,11 +220,7 @@ img {
 
 .contenido-nosotros h2,
 .contenido-nosotros p {
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
 }
-
-
-
-
 
 
